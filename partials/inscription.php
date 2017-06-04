@@ -1,12 +1,12 @@
 <?php
 
 // table utilisateurs
-if( isset($_POST['inscrire']) ) {
+if( isset($_POST['inscrire']) && ($_POST['password']) === ($_POST['confirmPassword']) ) {
 
-	$query = $dbh->prepare('INSERT INTO utilisateurs(nom, prenom, mail, password) VALUES (:nom, :prenom, :mail, :password)');
+	$query = $dbh->prepare('INSERT INTO utilisateurs(nom, prenom, email, password) VALUES (:nom, :prenom, :mail, :password)');
 	$query->bindValue('nom', $_POST['nom'], PDO::PARAM_STR);
 	$query->bindValue('prenom', $_POST['prenom'], PDO::PARAM_STR);
-	$query->bindValue('mail', $_POST['mail'], PDO::PARAM_STR);
+	$query->bindValue('mail', $_POST['email'], PDO::PARAM_STR);
 
 	$password_crypte = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	//die($password_crypte);
@@ -28,27 +28,27 @@ if( isset($_POST['inscrire']) ) {
 
 					<div class="form-group">
 						<label for="nom">Nom</label>
-						<input type="text" class="form-control" id="nom" placeholder="Votre nom">
+						<input type="text" class="form-control" name="nom" id="nom" placeholder="Votre nom">
 					</div>
 
 					<div class="form-group">
 						<label for="prenom">Prenom</label>
-						<input type="text" class="form-control" id="prenom" placeholder="Votre prenom">
+						<input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre prenom">
 					</div>
 
 					<div class="form-group">
-						<label for="email">Email address</label>
-						<input type="email" class="form-control" id="email" placeholder="Votre@email">
+						<label for="email">Votre email</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Votre@email">
 					</div>
 
 					<div class="form-group">
 						<label for="password">Mot de passe</label>
-						<input type="password" class="form-control" id="password">
+						<input type="password" class="form-control" name="password" id="password">
 					</div>
 
 					<div class="form-group">
 						<label for="password">Confirmation Mot de passe</label>
-						<input type="password" class="form-control" id="password">
+						<input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
 					</div>
 
 					<button type="submit" class="btn btn-default" name="inscrire">Inscription</button>
