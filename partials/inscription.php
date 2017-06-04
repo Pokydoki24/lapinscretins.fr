@@ -18,6 +18,7 @@ if( isset($_POST['inscrire']) ) {
 }
 
 ?>
+<h2 style="text-align: center;margin-bottom: 4rem;">INSCRIPTION</h2>
 
 <section id="inscription">
 	<div class="container">
@@ -41,12 +42,12 @@ if( isset($_POST['inscrire']) ) {
 					</div>
 
 					<div class="form-group">
-						<label for="message">Mot de passe</label>
+						<label for="password">Mot de passe</label>
 						<input type="password" class="form-control" id="password">
 					</div>
 
 					<div class="form-group">
-						<label for="message">Confirmation Mot de passe</label>
+						<label for="password">Confirmation Mot de passe</label>
 						<input type="password" class="form-control" id="password">
 					</div>
 
