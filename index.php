@@ -67,7 +67,10 @@ if( isset($_REQUEST['page']) ) {
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-      <link href="style.css" rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body>
@@ -94,8 +97,8 @@ if( isset($_REQUEST['page']) ) {
             <li class="<?= ( $page === 'dvd') ? "active" : "" ?>"><a href="index.php?page=dvd">DVD</a></li>
             <li class="<?= ( $page === 'jeux') ? "active" : "" ?>"><a href="index.php?page=jeux">Jeux</a></li>
             <li class="<?= ( $page === 'shop') ? "active" : "" ?>"><a href="index.php?page=shop">Shop</a></li>
-            <li class="<?= ( $page === 'inscription') ? "active" : "" ?>"><a href="index.php?page=inscription">Inscription</a></li>
-            <!-- Bouton connexion (li) -->
+            <li class="<?= ( $page === 'inscription') ? "active" : "" ?>" id="btnInscription"><a href="index.php?page=inscription">Inscription</a></li>
+            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -112,23 +115,58 @@ if( isset($_REQUEST['page']) ) {
         <?php include "partials/$fichier" ?>
       </div>
     </div>
+    
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="menu list-inline">
 
-    <footer style="margin-left: 4rem;">
-      <!-- <div align="left">
-        <a href="#">PAIEMENT 100% SÉCURISÉ</a>/
-        <a href="#">SATISFAIT OU REMBOURSÉ</a>
+              <li>
+                <a href="#">A propos</a>
+              </li>
+
+              <li>
+                <a href="#">Qui sommes nous ?</a>
+              </li>
+
+              <li class="<?= ( $page === 'contact') ? "active" : "" ?>">
+                <a href="index.php?page=contact">Contact</a>
+              </li>
+
+              <li>
+                <a href="#">Mentions legales</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="list-inline">
+
+              <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+              </li>
+
+
+              <li>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+              </li>
+
+              <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div> 
       </div>
-
-      <div align="right">
-        <a href="bd.html">BD</a>
-        <a href="dvd.html">DVD</a>
-        <a href="jeux.html">EXPÉDIÉ SOUS 24/48H</a><br/>
-        <p>Lapin Cretin&nbsp;All rights reserved.</p>
-      </div> -->
-      <a href="index.php?page=contact">Contact</a>
-
+      <div class="row text-center">
+        <p>Copyright © 2017 All rights reserved</p>
+      </div>
     </footer>
-
+    
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
