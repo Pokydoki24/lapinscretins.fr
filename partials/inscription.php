@@ -1,12 +1,11 @@
 <?php
 
-// table utilisateurs
 if( isset($_POST['inscrire']) && ($_POST['password']) === ($_POST['confirmPassword']) ) {
 
-	$query = $dbh->prepare('INSERT INTO utilisateurs(nom, prenom, email, password) VALUES (:nom, :prenom, :mail, :password)');
+	$query = $dbh->prepare('INSERT INTO utilisateurs(nom, prenom, email, password) VALUES (:nom, :prenom, :email, :password)');
 	$query->bindValue('nom', $_POST['nom'], PDO::PARAM_STR);
 	$query->bindValue('prenom', $_POST['prenom'], PDO::PARAM_STR);
-	$query->bindValue('mail', $_POST['email'], PDO::PARAM_STR);
+	$query->bindValue('email', $_POST['email'], PDO::PARAM_STR);
 
 	$password_crypte = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	//die($password_crypte);

@@ -27,17 +27,17 @@ if( isset($_REQUEST['page']) ) {
   $fichier = "shop.html";
   break;
 
-  // case 'contact':
-  // $fichier = "contact.html";
+  // case 'connexion':
+  // $fichier = "connexion.php";
   // break;
 
   case 'inscription':
   $fichier = "inscription.php";
   break;
 
-  // case 'connexion':
-  // $fichier = "connexion.php";
-  // break;
+  case 'contact':
+  $fichier = "contact.php";
+  break;
 
   default:
   $fichier = "accueil.html";
@@ -66,7 +66,7 @@ if( isset($_REQUEST['page']) ) {
       <link rel="shortcut icon" href="img/1.png">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
       <link href="style.css" rel="stylesheet" href="css/style.css">
   </head>
 
@@ -113,8 +113,8 @@ if( isset($_REQUEST['page']) ) {
       </div>
     </div>
 
-    <footer style="margin-top: 4rem;">
-      <div align="left">
+    <footer style="margin-left: 4rem;">
+      <!-- <div align="left">
         <a href="#">PAIEMENT 100% SÉCURISÉ</a>/
         <a href="#">SATISFAIT OU REMBOURSÉ</a>
       </div>
@@ -124,7 +124,8 @@ if( isset($_REQUEST['page']) ) {
         <a href="dvd.html">DVD</a>
         <a href="jeux.html">EXPÉDIÉ SOUS 24/48H</a><br/>
         <p>Lapin Cretin&nbsp;All rights reserved.</p>
-      </div>
+      </div> -->
+      <a href="index.php?page=contact">Contact</a>
 
     </footer>
 
@@ -134,5 +135,6 @@ if( isset($_REQUEST['page']) ) {
     crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src=js/script.js></script>
   </body>
 </html>
