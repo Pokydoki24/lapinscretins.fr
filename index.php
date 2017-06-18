@@ -20,16 +20,22 @@ if( isset($_REQUEST['page']) ) {
   break;
 
   case 'jeux':
-  $fichier = "jeux.html";
+  $fichier = "jeux.php";
   break;
 
   case 'shop':
-  $fichier = "shop.html";
+  $fichier = "shop.php";
   break;
 
+<<<<<<< HEAD
   // case 'connexion':
   // $fichier = "connexion.php";
   // break;
+=======
+  case 'connexion':
+  $fichier = "connexion.php";
+  break;
+>>>>>>> master
 
   case 'inscription':
   $fichier = "inscription.php";
@@ -57,7 +63,7 @@ if( isset($_REQUEST['page']) ) {
       <title>Lapin Cretin.fr</title>
 
       <meta name="keywords" content="" />
-      <meta name="author" content="lapin cretin" />
+      <meta name="author" content="Aurelie C." />
       <meta name="country" content="France" />
       <meta name="geo.country" content="FR" />
       <meta name="description" content="Site autour de l'univers des lapins cretins." />
@@ -66,7 +72,10 @@ if( isset($_REQUEST['page']) ) {
       <link rel="shortcut icon" href="img/1.png">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<<<<<<< HEAD
       <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+=======
+>>>>>>> master
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" href="css/style.css">
@@ -87,7 +96,7 @@ if( isset($_REQUEST['page']) ) {
           </button>
           <a href="index.php">
 
-          <img src="img/cretin.jpg" alt="logo lapin cretin" style="width:14rem;height:8rem;"></a>
+          <img id="logo" src="img/cretin.jpg" alt="logo lapin cretin"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -98,14 +107,23 @@ if( isset($_REQUEST['page']) ) {
             <li class="<?= ( $page === 'jeux') ? "active" : "" ?>"><a href="index.php?page=jeux">Jeux</a></li>
             <li class="<?= ( $page === 'shop') ? "active" : "" ?>"><a href="index.php?page=shop">Shop</a></li>
             <li class="<?= ( $page === 'inscription') ? "active" : "" ?>" id="btnInscription"><a href="index.php?page=inscription">Inscription</a></li>
+<<<<<<< HEAD
             <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
+=======
+            <?php if(!isset($_SESSION['utilisateur'])){ ?>
+            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
+            <?php }else{ ?>
+            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnDeonnexion"><a href="index.php?page=connexion">Deconnexion</a></li>
+            <?php } ?>
+          
+>>>>>>> master
           </ul>
-          <form class="navbar-form navbar-left">
+          <!-- <form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Recherche....">
             </div>
             <button type="submit" class="btn btn-default">Rechercher</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
@@ -139,6 +157,7 @@ if( isset($_REQUEST['page']) ) {
               </li>
             </ul>
           </div>
+<<<<<<< HEAD
 
           <div class="col-md-6 col-sm-6 col-xs-12">
             <ul class="list-inline">
@@ -147,6 +166,16 @@ if( isset($_REQUEST['page']) ) {
                 <a href="#"><i class="fa fa-facebook-square"></i></a>
               </li>
 
+=======
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="list-inline">
+
+              <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+              </li>
+
+>>>>>>> master
 
               <li>
                 <a href="#"><i class="fa fa-twitter-square"></i></a>

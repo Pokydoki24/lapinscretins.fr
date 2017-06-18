@@ -8,7 +8,6 @@ if( isset($_POST['inscrire']) && ($_POST['password']) === ($_POST['confirmPasswo
 	$query->bindValue('email', $_POST['email'], PDO::PARAM_STR);
 
 	$password_crypte = password_hash($_POST['password'], PASSWORD_DEFAULT);
-	//die($password_crypte);
 
 	$query->bindValue('password', $password_crypte, PDO::PARAM_STR);
 
@@ -17,7 +16,7 @@ if( isset($_POST['inscrire']) && ($_POST['password']) === ($_POST['confirmPasswo
 }
 
 ?>
-<h2 style="text-align: center;margin-bottom: 4rem;">INSCRIPTION</h2>
+<h2>INSCRIPTION</h2>
 
 <section id="inscription">
 	<div class="container">
