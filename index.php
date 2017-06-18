@@ -27,15 +27,9 @@ if( isset($_REQUEST['page']) ) {
   $fichier = "shop.php";
   break;
 
-<<<<<<< HEAD
-  // case 'connexion':
-  // $fichier = "connexion.php";
-  // break;
-=======
   case 'connexion':
   $fichier = "connexion.php";
   break;
->>>>>>> master
 
   case 'inscription':
   $fichier = "inscription.php";
@@ -72,10 +66,6 @@ if( isset($_REQUEST['page']) ) {
       <link rel="shortcut icon" href="img/1.png">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<<<<<<< HEAD
-      <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-=======
->>>>>>> master
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" href="css/style.css">
@@ -107,16 +97,12 @@ if( isset($_REQUEST['page']) ) {
             <li class="<?= ( $page === 'jeux') ? "active" : "" ?>"><a href="index.php?page=jeux">Jeux</a></li>
             <li class="<?= ( $page === 'shop') ? "active" : "" ?>"><a href="index.php?page=shop">Shop</a></li>
             <li class="<?= ( $page === 'inscription') ? "active" : "" ?>" id="btnInscription"><a href="index.php?page=inscription">Inscription</a></li>
-<<<<<<< HEAD
-            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
-=======
             <?php if(!isset($_SESSION['utilisateur'])){ ?>
             <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
             <?php }else{ ?>
             <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnDeonnexion"><a href="index.php?page=connexion">Deconnexion</a></li>
             <?php } ?>
           
->>>>>>> master
           </ul>
           <!-- <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -157,7 +143,6 @@ if( isset($_REQUEST['page']) ) {
               </li>
             </ul>
           </div>
-<<<<<<< HEAD
 
           <div class="col-md-6 col-sm-6 col-xs-12">
             <ul class="list-inline">
@@ -166,16 +151,6 @@ if( isset($_REQUEST['page']) ) {
                 <a href="#"><i class="fa fa-facebook-square"></i></a>
               </li>
 
-=======
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <ul class="list-inline">
-
-              <li>
-                <a href="#"><i class="fa fa-facebook-square"></i></a>
-              </li>
-
->>>>>>> master
 
               <li>
                 <a href="#"><i class="fa fa-twitter-square"></i></a>

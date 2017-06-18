@@ -13,11 +13,7 @@ if( isset($_POST['contacter']) ){
 }
 
 ?>
-<<<<<<< HEAD
-<h2 style="text-align: center;margin-bottom: 4rem;">CONTACTEZ NOUS</h2>
-=======
 <h2>CONTACTEZ NOUS</h2>
->>>>>>> master
 
 <section id="contact">
 	<div class="container">
