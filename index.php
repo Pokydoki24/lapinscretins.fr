@@ -100,7 +100,7 @@ if( isset($_REQUEST['page']) ) {
             <?php if(!isset($_SESSION['utilisateur'])){ ?>
             <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
             <?php }else{ ?>
-            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnDeonnexion"><a href="index.php?page=connexion">Deconnexion</a></li>
+            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnDeconnexion"><a href="index.php?page=connexion">Deconnexion</a></li>
             <?php } ?>
           
           </ul>

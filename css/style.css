@@ -9,18 +9,33 @@ h2{
 
 .navbar-nav{
 	float: right;
-	margin-right: 20rem;
+	margin-right: 10rem;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: black !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	border: 1px solid lightblue;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin-left: 1rem;
+	background-color: lightblue;
 }
 
 #logo{
 	width:6rem;
 	height:6rem;
-	margin-left: 20rem;
+	margin-left: 10rem;
 }
 
-#btnInscription, #btnConnexion{
-	border: 1px solid black;
-
+#btnInscription, #btnConnexion, #btnDeconnexion{
+	border: 1px solid lightblue;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin-left: 1rem;
+	background-color: lightblue;
 }
 
 /***********************PAGE JEUX******************/
