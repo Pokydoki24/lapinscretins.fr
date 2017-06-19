@@ -3,6 +3,10 @@ h2{
 	margin-bottom: 4rem;
 }
 
+.navbar-default{
+	background-color: lightblue !important;
+}
+
 .container-fluid{
 	padding: 1rem;
 }
@@ -17,11 +21,7 @@ h2{
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	border: 1px solid lightblue;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
 	margin-left: 1rem;
-	background-color: lightblue;
 }
 
 #logo{
@@ -31,11 +31,7 @@ h2{
 }
 
 #btnInscription, #btnConnexion, #btnDeconnexion{
-	border: 1px solid lightblue;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
 	margin-left: 1rem;
-	background-color: lightblue;
 }
 
 /***********************PAGE JEUX******************/
@@ -103,7 +99,7 @@ h5{
 }
 
 footer{
-	background-color: lightblue;
+	background-color: lightskyblue !important;
 	min-height:200px;
 	padding: 4rem 10rem;
 	position: fixed;
