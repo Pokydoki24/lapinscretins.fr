@@ -5,6 +5,7 @@ h2{
 
 .navbar-default{
 	background-color: lightblue !important;
+	margin-bottom: 4rem !important;
 }
 
 .container-fluid{
@@ -100,11 +101,11 @@ h5{
 
 footer{
 	background-color: lightskyblue !important;
-	min-height:200px;
-	padding: 4rem 10rem;
-	position: fixed;
-	left: 30px;
-	bottom: -165px;
+    position: static;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    padding: 4rem;
 }
 
 footer .menu li a{
@@ -123,4 +124,5 @@ footer .menu li a{
 
 .fa.fa-facebook:hover , .fa.fa-dropbox:hover , .fa.fa-flickr:hover  , .fa.fa-github:hover  , .fa.fa-linkedin:hover  ,.fa,fa-tumblr:hover  ,.fa.fa-google-plus:hover  , .fa.fa-tumblr:hover  {
 	color:#6794c2;
+	/*font-size: 6rem;*/
 }

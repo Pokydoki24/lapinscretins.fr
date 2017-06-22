@@ -10,19 +10,44 @@ if( isset($_POST['inscrire']) && ($_POST['password']) === ($_POST['confirmPasswo
 	$password_crypte = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 	$query->bindValue('password', $password_crypte, PDO::PARAM_STR);
-
 	$query->execute();
-	header('Location: index.php');
+
+	// if(filter_var($email, FILTER_VALIDATE_EMAIL))
+  	//      echo 'email valide..';
+  	// else
+  	//      echo 'email non valide...';
+
+	$erreur = '';
+
+	if(empty($_POST['nom'])){
+		$erreur = "Veuillez saisir le champ";
+	}
+	elseif (empty($_POST['prenom'])) {
+		$erreur = "Veuillez saisir le champ";
+	}
+	elseif (empty($_POST['email'])) {
+		$erreur = "Veuillez saisir le champ";
+	}
+	elseif ($_POST['password'] < 6 ) {
+		$erreur = "Veuillez saisir 5 caracteres minimum";
+	}
+	else{
+		header('Location: index.php');
+	}
 }
 
 ?>
+
 <h2>INSCRIPTION</h2>
 
 <section id="inscription">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<form action="index.php?page=inscription" method="POST">
+				<?php if(!empty($erreur)) : ?>
+      				<span><?php echo $erreur; ?></span>
+    			<?php endif; ?>
+				<form id="formInscription" action="index.php?page=inscription" method="POST">
 
 					<div class="form-group">
 						<label for="nom">Nom</label>

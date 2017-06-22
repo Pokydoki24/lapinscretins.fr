@@ -74,103 +74,12 @@ if( isset($_REQUEST['page']) ) {
 
   <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.php">
+    <?php include "partials/header.php" ?>
 
-          <img id="logo" src="img/cretin.jpg" alt="logo lapin cretin"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="<?= ( $page === 'accueil') ? "active" : "" ?>" ><a href="index.php">Accueil</a></li>
-            <li class="<?= ( $page === 'bd') ? "active" : "" ?>"><a href="index.php?page=bd">BD</a></li>
-            <li class="<?= ( $page === 'dvd') ? "active" : "" ?>"><a href="index.php?page=dvd">DVD</a></li>
-            <li class="<?= ( $page === 'jeux') ? "active" : "" ?>"><a href="index.php?page=jeux">Jeux</a></li>
-            <li class="<?= ( $page === 'shop') ? "active" : "" ?>"><a href="index.php?page=shop">Shop</a></li>
-            <li class="<?= ( $page === 'inscription') ? "active" : "" ?>" id="btnInscription"><a href="index.php?page=inscription">Inscription</a></li>
-            <?php if(!isset($_SESSION['utilisateur'])){ ?>
-            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnConnexion"><a href="index.php?page=connexion">Connexion</a></li>
-            <?php }else{ ?>
-            <li class="<?= ( $page === 'connexion') ? "active" : "" ?>" id="btnDeconnexion"><a href="index.php?page=connexion">Deconnexion</a></li>
-            <?php } ?>
-          
-          </ul>
-          <!-- <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Recherche....">
-            </div>
-            <button type="submit" class="btn btn-default">Rechercher</button>
-          </form> -->
-        </div>
-      </div>
-    </nav>
-
-    <div class="row">
-      <div class="col-md-12">
-        <?php include "partials/$fichier" ?>
-      </div>
-    </div>
+    <?php include "partials/$fichier" ?>
     
-    <footer>
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <ul class="menu list-inline">
-
-              <li>
-                <a href="#">A propos</a>
-              </li>
-
-              <li>
-                <a href="#">Qui sommes nous ?</a>
-              </li>
-
-              <li class="<?= ( $page === 'contact') ? "active" : "" ?>">
-                <a href="index.php?page=contact">Contact</a>
-              </li>
-
-              <li>
-                <a href="#">Mentions legales</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <ul class="list-inline">
-
-              <li>
-                <a href="#"><i class="fa fa-facebook-square"></i></a>
-              </li>
-
-
-              <li>
-                <a href="#"><i class="fa fa-twitter-square"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-
-            </ul>
-          </div>
-
-
-        </div> 
-      </div>
-      <div class="row text-center">
-        <p>Copyright © 2017 All rights reserved</p>
-      </div>
-    </footer>
-    
+    <?php include "partials/footer.php" ?>
+     
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
