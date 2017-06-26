@@ -62,6 +62,12 @@ h5{
 	height: 25rem;
 }
 
+.containerJeux{
+	width: 40rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
 /************************FOOTER***********************/
 .search-text{
 	margin-top:50px;

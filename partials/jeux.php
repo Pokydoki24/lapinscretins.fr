@@ -1,4 +1,5 @@
 <?php
+  // Condition en plus
   $where_statement = "";
   if(isset($_GET["console_id"])){
     $where_statement = " AND `jeux_console`.`id_console` = :id_console";
@@ -22,12 +23,10 @@
   </div>
 </section>
 
-<section>
-  <div id="jeuxContainer" class="container">
-    <div class="row">
+<section id="jeuxContainer">
       <?php while($jeu = $query->fetch()){
       ?>
-        <div class="col-md-4">
+        <div class="containerJeux">
           <img class="jeuxPHP" src="img/<?php echo($jeu['photo']); ?>" alt="image">
           <h5><?php echo($jeu["nom"]); ?></h5>
           <p><?php echo($jeu["genre"]); ?></p>
@@ -38,6 +37,4 @@
           <p><?php echo($jeu["description"]); ?></p>
         </div>
       <?php } ?>
-    </div>
-  </div>
 </section>
