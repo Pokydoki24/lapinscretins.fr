@@ -1,0 +1,20 @@
+
+.tabs { height:36px; }
+.tabs ul{ list-style-type: none; font-size:14px; text-transform: uppercase; font-weight: bold; }
+.tabs ul li{ float:left; display:inline; margin-right:1px; }
+.tabs ul li a,
+.tabs ul li a span { float:left; height:36px; background:url(images/tab.gif) no-repeat 0 -37px; padding:0 0 0 20px;}
+.tabs ul li a span { background-position:right -37px; padding:0 20px 0 0;}
+.tabs ul li a { position:relative; line-height:36px; color:#895d23; }
+
+
+.items { position:relative; width:960px; margin-right:-20px; padding-bottom:5px; }
+.items ul{ list-style-type: none;}
+.items ul li{ float:left; border:dashed 1px #cfcfcf; width:194px; margin:0 18px 12px 0; padding:13px; }
+.items ul li p span{ color:#890000}
+.items ul li p.price{ padding-top:15px; }
+.items ul li p.price strong{ color:#890000; font-size:14px;}
+
+.tab-content { display:none;}
+
+.tabbed { min-height:420px;}

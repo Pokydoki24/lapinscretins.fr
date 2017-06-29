@@ -68,6 +68,37 @@ h5{
 	vertical-align: top;
 }
 
+/*************************PAGE DVD*******************/
+
+#img_Lap {
+  animation-duration: 4s;
+  animation-name: zoomIn;
+  animation-iteration-count: infinite;
+}
+
+#img_bwah {  
+animation-iteration-count: infinite;
+animation-name: tada;
+}
+
+.titleDVD{ 
+text-decoration: underline;
+} 
+
+.subtitleDVD{ 
+text-decoration: underline; 
+font-style: italic; 
+}
+
+ img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*********************PAGE SHOP*********************/
+
+
 /************************FOOTER***********************/
 .search-text{
 	margin-top:50px;
@@ -130,5 +161,4 @@ footer .menu li a{
 
 .fa.fa-facebook:hover , .fa.fa-dropbox:hover , .fa.fa-flickr:hover  , .fa.fa-github:hover  , .fa.fa-linkedin:hover  ,.fa,fa-tumblr:hover  ,.fa.fa-google-plus:hover  , .fa.fa-tumblr:hover  {
 	color:#6794c2;
-	/*font-size: 6rem;*/
 }

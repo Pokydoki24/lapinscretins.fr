@@ -10,7 +10,7 @@
       </button>
       <a href="index.php">
 
-      <img id="logo" src="img/cretin.jpg" alt="logo lapin cretin"></a>
+      <img id="logo" src="img/logo1.jpg" alt="logo lapin cretin" style="width: 150px;"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -12,7 +12,7 @@
   $query->execute();
 
 ?>
-
+<h2>La gamerie</h2>
 <section id="jeuxPHP">
   <div class="container">
       <a href="index.php?page=jeux&console_id=3"><img class="imgStyle" src="img/PC-Gamer-Spec-01.png" alt="Jeux PC" title="Jeux PC"></a>

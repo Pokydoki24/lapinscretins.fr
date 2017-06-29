@@ -35,6 +35,10 @@ if( isset($_REQUEST['page']) ) {
   $fichier = "inscription.php";
   break;
 
+  case 'quisommesnous':
+  $fichier = "quisommesnous.html";
+  break;
+
   case 'contact':
   $fichier = "contact.php";
   break;
@@ -57,7 +61,7 @@ if( isset($_REQUEST['page']) ) {
       <title>Lapin Cretin.fr</title>
 
       <meta name="keywords" content="" />
-      <meta name="author" content="Aurelie C." />
+      <meta name="author" content="Aurelie C.,Alex V., Wendy D., Robyn P." />
       <meta name="country" content="France" />
       <meta name="geo.country" content="FR" />
       <meta name="description" content="Site autour de l'univers des lapins cretins." />
@@ -68,7 +72,7 @@ if( isset($_REQUEST['page']) ) {
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
 
